@@ -70,6 +70,7 @@ Add new projects inside your HTML like this:
   </div>
 </div>
 */
+<<<<<<< HEAD
 
 .project-card {
   background: #1a1a1a;
@@ -123,3 +124,5 @@ Add new projects inside your HTML like this:
 .blue-link:hover {
   color: darkblue;
 }   
+=======
+>>>>>>> 98e88f223db9ba7dabff2b56d2f2ef4cccee7faf
