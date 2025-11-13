@@ -1,0 +1,125 @@
+/* Custom CSS for Peter M. Mbugua Portfolio
+   This file works alongside TailwindCSS.
+   Add additional styling or override Tailwind here.
+*/
+
+:root {
+  --primary: #001f54; /* Navy */
+  --secondary: #0047ab; /* Royal Blue */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+}
+
+/* Gradient ring for profile */
+.profile-ring {
+  border-radius: 9999px;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* Project card layout enhancer */
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.project-card img {
+  flex-shrink: 0;
+  border-radius: 12px;
+  width: 260px;
+  height: auto;
+}
+
+/* Responsive adjustment for project layout */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card img {
+    width: 100%;
+  }
+}
+
+/* Hover effects */
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+}
+
+/* Manual project insertion helper */
+/*
+Add new projects inside your HTML like this:
+<div class="project-card">
+  <img src="static/projects/myproject.png" alt="My Project" />
+  <div>
+    <h3 class="text-xl font-semibold">Project Title</h3>
+    <p class="text-gray-600 mt-2">Short description about the project...</p>
+    <a href="#" class="text-blue-700 font-semibold mt-2 block">View Project →</a>
+  </div>
+</div>
+*/
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-info {
+  padding: 1rem;
+  color: #fff;
+}
+.project-info h3 {
+  margin: 0.5rem 0;
+}
+.btn {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: #00ff9d;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #00cc7a;
+}
+.btn.secondary {
+  background: #333;
+  color: #fff;
+}
+
+.blue-link {
+  color: blue;
+  text-decoration: underline; 
+}
+
+.blue-link:visited {
+  color: blue;
+}
+
+.blue-link:hover {
+  color: darkblue;
+}   
